@@ -1,0 +1,60 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c8e7ff, #a2d2ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #244d61;
+}
+
+.cartao {
+  background: linear-gradient(135deg, #bde0fe, #c8e7ff);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(162, 210, 255, 0.7);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  animation: brilho 3s infinite alternate;
+}
+
+.topo {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+button {
+  background: #a2d2ff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #244d61;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: #bde0fe;
+  transform: scale(1.05);
+}
+
+@keyframes brilho {
+  from {
+    box-shadow: 0 0 20px rgba(162, 210, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(162, 210, 255, 0.9);
+  }
+}
